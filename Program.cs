@@ -11,15 +11,13 @@
 
                 Console.Write("Введите первое число:");
                 int first = Convert.ToInt32(Console.ReadLine());
-
-                
+                                
                 Console.Write("Введите второе число:");
                 int second = Convert.ToInt32(Console.ReadLine());
 
                 Calc calc = new Calc();
 
                 long result = calc.CalcAdd(first, second);
-
 
                 Console.WriteLine("Cумма " + first + " и " + second + " равна " + result + ".");
                 
@@ -54,20 +52,15 @@
             }
         }
 
-
         public interface ICalc
         {
             public long CalcAdd(int a, int b);
         }
+
         public class Calc : ICalc
         {
             public long CalcAdd(int a, int b)
             { return a + b; }
         }
-
-
-
-
-
     }
 }
